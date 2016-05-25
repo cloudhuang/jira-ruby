@@ -25,3 +25,8 @@ options = {
             :read_timeout => 120
           }
 ```
+
+```
+STDOUT.write "\r In Progressing: #{(fetched_results / (json['total']  * 0.1 * 10)) * 100}%"
+STDOUT.flush
+```
